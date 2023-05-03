@@ -1,9 +1,21 @@
-<script setup>
-import AppTitle from './components/AppTitle.vue'
+<script>
+import AppTitle from './components/AppTitle.vue';
+import Jumbotrone from './components/Jumbotrone.vue';
+
+export default {
+  name: "App",
+  components: {
+    AppTitle,
+    Jumbotrone
+  }
+}
 </script>
 
 <template>
-  <AppTitle />
+  <div>
+    <AppTitle />
+    <Jumbotrone />
+  </div>
 </template>
 
-<style scoped></style>
+<style></style>
